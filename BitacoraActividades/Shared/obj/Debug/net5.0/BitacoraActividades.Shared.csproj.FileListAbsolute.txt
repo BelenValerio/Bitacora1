@@ -1,0 +1,15 @@
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\BitacoraActividades.Shared.deps.json
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\BitacoraActividades.Shared.dll
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\ref\BitacoraActividades.Shared.dll
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\BitacoraActividades.Shared.pdb
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.AssemblyInfoInputs.cache
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.AssemblyInfo.cs
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.csproj.CoreCompileInputs.cache
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.dll
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\ref\BitacoraActividades.Shared.dll
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.pdb
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\BitacoraActividades.Shared.runtimeconfig.json
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\bin\Debug\net5.0\BitacoraActividades.Shared.runtimeconfig.dev.json
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.genruntimeconfig.cache
+C:\Users\RC-Sercivio Social\Desktop\BITACORA\BitacoraActividades\BitacoraActividades\Shared\obj\Debug\net5.0\BitacoraActividades.Shared.csproj.AssemblyReference.cache

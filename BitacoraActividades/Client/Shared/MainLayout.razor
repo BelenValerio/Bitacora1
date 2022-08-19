@@ -1,0 +1,45 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager navigate;
+@inject AuthenticationStateProvider auth;
+@using BitacoraActividades.Client.Service;
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4">
+            @*<a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>*@
+
+            <AuthorizeView>
+                <Authorized>
+                    <button class="btn btn-danger" onclick="CerrarSesion">Cerrar Sesion</button>
+                </Authorized>
+
+                <NotAuthorized>
+                    <button class="btn btn-primary" onclick="login">Login</button>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+
+    @code{
+        public void CerrarSesion()
+        {
+            ((Autenticacion)auth).CerrarSesion();
+            navigate.NavigateTo("/");
+        }
+
+        public void login()
+        {
+            navigate.NavigateTo("/");
+        }
+
+    }
+
+</div>

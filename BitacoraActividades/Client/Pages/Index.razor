@@ -1,0 +1,64 @@
+﻿@layout LoginLayout
+@page "/"
+@using BitacoraActividades.Shared;
+@inject NavigationManager navigate;
+@inject AuthenticationStateProvider auth;
+@using BitacoraActividades.Client.Service;
+@using BitacoraActividades.Client;
+@inject HttpClient http;
+
+
+
+
+<div style="display:grid;justify-items:center;aling-items:center;min-height:100vh">
+    <div class="col-md-6 m-auto">
+        <EditForm Model="@oUsuarioCLS" OnValidSubmit="Login">
+            <div class="text-center">
+                <img style="max-width:100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAP4FMxEZVWg1CnwfK8OVVe2yeP594AdqqTGdv5uljDgKE7b957XLvAAJQNjlWzqqe-pg&usqp=CAU" />
+            </div>
+
+            <h1 class="text-center">Ingrese a la aplicacion</h1>
+            <div class="form-group">
+                <label>Ingrese Usuario</label>
+                <InputText @bind-Value="oUsuarioCLS.nombre" class="form form-control" />
+            </div>
+
+            <div class="form-group">
+                <label>Ingrese Contraseña</label>
+                <InputText type="password" @bind-Value="oUsuarioCLS.contra" class="form form-control" />
+            </div>
+
+            <input type="submit" value="Enviar" class="btn btn-primary btn btn-block" />
+
+        </EditForm>
+    </div>
+</div>
+
+
+
+@code{
+
+    public string error = "";
+    public UsuarioCLS oUsuarioCLS = new UsuarioCLS();
+
+    public async void Login()
+    {
+
+        //usuario->admin  contraseña->12345678
+        var algo = await http.PostAsJsonAsync<UsuarioCLS>("api/Usuario/login", oUsuarioCLS);
+        int rpta = await algo.Content.ReadFromJsonAsync<int>();
+
+        if (rpta != 0)
+        {
+            //Llamamos a nuestro entrar pasandole un id tipo String
+            ((Autenticacion)auth).entrar(rpta.ToString());
+            //Navegamos a la pagina llamada "counter"
+            navigate.NavigateTo("/counter",true);
+        }
+        else
+        {
+            error = "El usuario y contraseña es incorrecto";
+        }
+    }
+}
+
